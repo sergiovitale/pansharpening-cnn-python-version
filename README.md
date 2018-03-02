@@ -1,13 +1,15 @@
 # pansharpening-cnn
-[Target-Adaptive CNN Based Pansharpening](https://arxiv.org/abs/1709.06054) is an advanced version of pansharpening method PNN with residual learning, different loss and a target-adaptive phase. 
+[Target-Adaptive CNN Based Pansharpening](https://arxiv.org/abs/1709.06054) is an advanced version of pansharpening method [PNN](http://www.mdpi.com/2072-4292/8/7/594) with residual learning, different loss and a target-adaptive phase. 
 
 # Team members
  Giuseppe Scarpa  (giscarpa@.unina.it);
- Sergio Vitale    (sergio.vitale@uniparthenope.it);
+ Sergio Vitale    (contact person, sergio.vitale@uniparthenope.it);
  Davide Cozzolino (davide.cozzolino@unina.it).
+ 
  
 # License
 Copyright (c) 2018 Image Processing Research Group of University Federico II of Naples ('GRIP-UNINA').
+
 All rights reserved. This work should only be used for nonprofit purposes.
 
 By downloading and/or using any of these files, you implicitly agree to all the
@@ -16,7 +18,8 @@ terms of the license, as specified in the document LICENSE.txt
 
 # Prerequisits
 This code is written for Python2.7 and uses Theano library.
-The list of all requirements is in "requirements.txt" file
+The list of all requirements is in `requirements.txt`.
+
 The command to install the requirements is: 
 
 ```
@@ -46,12 +49,10 @@ python PNN_testing.py -s <SENSOR>
 PATH=<CUDAPATH>:$PATH python PNN_testing.py -g -s <SENSOR>
 ```
 
-* The code generates the:
-	* `./outputs/<SENSOR>/output.mat` as file result;
-	* `./outputs/<SENSOR>/FT_network/PNN_model.mat` as fine tuned network, whether you choose finetuning.
+* Output:
+	* result: `./outputs/<SENSOR>/output.mat`;
+	* (eventual) fine-tuned network: `./outputs/<SENSOR>/FT_network/PNN_model.mat`.
 	
 
 Where `<SENSOR>` can be: 'GE1','IK','WV2'; 
 and `<CUDAPATH>` is your bin local path of cuda.
-
-
