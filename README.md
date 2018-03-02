@@ -1,5 +1,5 @@
 # pansharpening-cnn
-[Target-Adaptive CNN Based Pansharpening](https://arxiv.org/abs/1709.06054) is an advanced version of pansharpening method [PNN](http://www.mdpi.com/2072-4292/8/7/594) with residual learning, different loss and a target-adaptive phase. 
+[Target-adaptive CNN-based pansharpening](https://arxiv.org/abs/1709.06054) is an advanced version of pansharpening method [PNN](http://www.mdpi.com/2072-4292/8/7/594) with residual learning, different loss and a target-adaptive phase. 
 
 # Team members
  Giuseppe Scarpa  (giscarpa@.unina.it);
