@@ -26,8 +26,7 @@ Optional requirements for using gpu:
 * cudnn = 5
 
 # Usage
-To use the code:
-* set all paramaters in 'config_testing_#sensor.xml' for desired #sensor:
+* set all paramaters in 'config_testing_<SENSOR>.xml':
 		*sensor: 	GeoEye1, IKONOS, WV2
 		*mode: 		'full' to high resolution pansharpening (PAN scale)
 				'reduce' to low resolution pansharening (MS scale)
@@ -41,14 +40,22 @@ To use the code:
 				path of fine tuned network
 
 * run test without gpu:
-	`python PNN_testing.py -s SENSOR`
+
+```	
+python PNN_testing.py -s <SENSOR>
+```
+
 * run test with gpu:
-	`[PATH] python PNN_testing.py -g -s SENSOR`
-where SENSOR can be: 'GE1','IK','WV2'
-where PATH is your local path of cuda
+
+```
+PATH=<CUDAPATH>:$PATH python PNN_testing.py -g -s <SENSOR>
+```
+	
+where <SENSOR> can be: 'GE1','IK','WV2'; 
+and <CUDAPATH> is your bin local path of cuda.
 
 The code generates the:
- './outputs/#SENSOR/output.mat' as file result
- './outputs/#SENSOR/FT_network/PNN_model.mat' as fine tuned network, whether you choose finetuning
+ './outputs/<SENSOR>/output.mat' as file result
+ './outputs/<SENSOR>/FT_network/PNN_model.mat' as fine tuned network, whether you choose finetuning
 
 
