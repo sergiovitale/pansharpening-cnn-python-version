@@ -1,0 +1,17 @@
+<config>
+    <testing name="test_setting">
+		<sensor name="sensor">WV2</sensor>
+		<cross_sensor name="cross_sensor">None</cross_sensor>
+		<mode name="mode">full</mode> <!-- use "full" to high resolution pansharpening (PAN scale), "reduce" to low resolution pansharpenging (MS scale) -->
+		<FT name="fine_tuning_setting">
+			<epochs name="epochs" type="int">50</epochs> <!-- set "0" to not do fine tuning, set "n" to do n epochs of fine tuning-->
+		</FT>
+	</testing>
+    <path name="path">
+		<init_weights name="pretrained_model">./networks/WV2/PNN_model_10000.mat</init_weights> <!-- path of pretrained model-->
+		<testset_path name="testset_path">./imgs/imgWV2.mat</testset_path> <!-- path of dataset of test image -->
+		<output_folder name="test_dir_out">./outputs/WV2/</output_folder> <!-- path in which save output image -->
+		<FTnetworks_output_folder name="ftnetwork_dir_out">./outputs/WV2/FTnetwork/</FTnetworks_output_folder> <!-- path in which save fine tuned network -->
+    </path>
+    
+</config>
