@@ -42,7 +42,7 @@ if PNN_model.has_key('net_scope'):
     net_scope=PNN_model['net_scope']
 else:
     layers=[PNN_model['layers'][i] for i in xrange(0,len(PNN_model['layers']),2)]
-    net_scope=0
+    net_scope=0 
     for lay in layers:
         net_scope+=lay.shape[2]-1
     net_scope=net_scope+1
