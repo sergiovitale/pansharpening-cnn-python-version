@@ -27,7 +27,7 @@ cat requirements.txt | xargs -n 1 -L 1 pip2 install
 ```
 
 Optional requirements for using gpu:
-* cuda = 8
+* cuda = 8 
 * cudnn = 5
 
 # Usage
