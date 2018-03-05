@@ -88,4 +88,4 @@ def downgrade_images(I_MS,I_PAN,ratio,sensor):
         
     return I_MS_LR,I_PAN_LR
             
-        
+         
