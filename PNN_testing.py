@@ -83,4 +83,4 @@ c[c>1]=1
 plt.imshow(c.transpose(1,2,0))
 plt.title('MULTISPECTRAL HIGH RESOLUTION'), plt.axis('off')
 
-plt.show()
+plt.show() 
