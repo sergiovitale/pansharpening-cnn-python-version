@@ -20,3 +20,4 @@ def fir_filter_wind(Hd,w):
     h=h/np.sum(h)
     
     return h
+ 
