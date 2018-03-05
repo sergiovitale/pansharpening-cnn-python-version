@@ -36,7 +36,7 @@ def input_preparation(I_MS_LR,I_PAN,param):
             print 'ok'
     else:
         sys.exit('interpolation not supported')
-    
+     
     if param['inputType']=='MS':
         I_in = I_MS.astype('single')/mav_value
     elif param['inputType']=='MS_PAN':
