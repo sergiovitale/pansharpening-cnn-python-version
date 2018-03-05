@@ -34,7 +34,7 @@ def PNN_test (I_MS_LR,I_PAN,inputImg, param,net,path,mode,epochs=0):
         for j in range(0,len(FT_model['layers']),2):
             layer.append(ConvLayer(FT_model['layers'][j], FT_model['layers'][j+1]))
         net=Network(layer)
-                
+                 
     
     if mode != 'full':
         I_MS_LR,I_PAN=downgrade_images(I_MS_LR,I_PAN,param['ratio'],param['sensor'])    
