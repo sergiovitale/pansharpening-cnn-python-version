@@ -66,3 +66,4 @@ def fine_tuning(I_MS,I_PAN,model,epochs,ft_dir_out):
     loss=np.zeros((2,1))
     net.SGD(I_in,I_ref,epochs, lr,residual,model,cost,regol,ft_dir_out,loss)
     
+ 
