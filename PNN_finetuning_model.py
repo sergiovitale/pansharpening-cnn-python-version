@@ -130,7 +130,7 @@ class ConvLayer:
         self.b=theano.shared(np.asarray(np.squeeze(bias),dtype=theano.config.floatX),borrow=False)      
         self.filter_shape=self.w.get_value().shape
         self.params = [self.w, self.b]
-        
+         
     def set_inpt(self, inpt,last):
         self.last = last
         self.inpt = inpt
