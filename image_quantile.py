@@ -28,3 +28,4 @@ def image_stretch(img, th):
             img[index,:,:] = (img[index,:,:]-th[index,0])/(th[index,1]-th[index,0])
         
     return img
+ 
