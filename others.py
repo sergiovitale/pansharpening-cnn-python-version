@@ -21,7 +21,7 @@ def get_attribute(children,node):
                 node[name]=bool(int(children.text))
             else:
                 node[name]=children.text
-            
+             
 def parser_xml(filename):
     tree=ET.parse(filename)
     root=tree.getroot()
