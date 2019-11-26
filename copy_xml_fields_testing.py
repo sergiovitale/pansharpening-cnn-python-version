@@ -13,6 +13,7 @@ save some parameters in variables to get suitable in next steps
 """
 
 
+from copy import deepcopy
 
 test_setting=model['test_setting']
 path=model['path']
@@ -31,7 +32,7 @@ ftnetwork_dir_out=path['ftnetwork_dir_out']
 if test_setting.has_key('area'):
     area=test_setting['area']
 
-PNN_model=sio.loadmat(model_path,squeeze_me=True)
+PNN_model=deepcopy(sio.loadmat(model_path,squeeze_me=True))
 residual = PNN_model['residual']
 
 pretrained_lr=PNN_model['lr']
