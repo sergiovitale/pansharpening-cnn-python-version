@@ -30,6 +30,11 @@ from PNN_test import PNN_test
 from others import parser_xml, export2
 
 model=parser_xml('config_testing_'+sensor+'.xml')
+"""
+in case of testing/finetuning on more images all the following
+lines have to be included in the loop, in order to avoid the overwriting
+of the pre-trained model
+"""
 execfile('copy_xml_fields_testing.py')
 
 layer=[]
