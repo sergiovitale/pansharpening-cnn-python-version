@@ -1,5 +1,5 @@
 matplotlib==1.5.3
-numpy==1.13.3
+numpy==1.22.0
 scipy==0.18.1
 theano==0.8.2
 Pillow==4.0.0
